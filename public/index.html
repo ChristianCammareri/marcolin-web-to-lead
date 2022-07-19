@@ -1,4 +1,16 @@
-<!--  ----------------------------------------------------------------------  -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="mainform.css">
+    </head>
+    <body>
+      <div class="grid-container">
+    <div class="grid-item">
+     <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
@@ -6,107 +18,122 @@
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTE: Please add the following <FORM> element to your page.             -->
-  <!--  ----------------------------------------------------------------------  -->
-  
-  <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-  
-  <input type=hidden name="oid" value="00D1X0000000MrD">
-  <input type=hidden name="retURL" value="http://google.it">
-  
-  <!--  ----------------------------------------------------------------------  -->
-  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-  <!--  these lines if you wish to test in debug mode.                          -->
-  <!--  <input type="hidden" name="debug" value=1>                              -->
-  <!--  <input type="hidden" name="debugEmail"                                  -->
-  <!--  value="ccammareri@deloitte.it">                                         -->
-  <!--  ----------------------------------------------------------------------  -->
-  
-  <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-  
-  <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-  
-  Role:<select  id="00N1X00000NW5Ls" name="00N1X00000NW5Ls" title="Role"><option value="">--None--</option><option value="Owner">Owner</option>
-  <option value="Buyer">Buyer</option>
-  <option value="Store Manager">Store Manager</option>
-  <option value="Sales Staff">Sales Staff</option>
-  <option value="Administration">Administration</option>
-  <option value="Other/Carlo">Other/Carlo</option>
-  </select><br>
-  
-  <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-  
-  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-  
-  <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-  
-  <label for="country_code">Country</label><select  id="country_code" name="country_code"><option value="">--None--</option><option value="DE">DE</option>
-  <option value="IT">IT</option>
-  <option value="US">US</option>
-  </select><br>
-  
-  <label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
-  
-  Brands of Interest:<select  id="00N1X00000NW2tq" multiple="multiple" name="00N1X00000NW2tq" title="Brands of Interest"><option value="FT">Tom Ford</option>
-<option value="OR">Adidas Originals</option>
-<option value="TB">Timberland</option>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name="oid" value="00D1X0000008he2">
+<input type=hidden name="retURL" value="http://">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="aarvanitidis@deloitte.gr">                                       -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+Store Typology:<select  id="00N1X00000NULX3" multiple="multiple" name="00N1X00000NULX3" title="Store Typology"><option value="3Os (Optician, Ophtamologist, Optometrist)">3Os (Optician, Ophtamologist, Optometrist)</option>
+<option value="Optical Chain">Optical Chain</option>
+<option value="Mass Merchandiser">Mass Merchandiser</option>
+<option value="Department. Store">Department. Store</option>
+<option value="Fashion Specialist Store">Fashion Specialist Store</option>
+<option value="Off-price and Outlet Retailer">Off-price and Outlet Retailer</option>
+<option value="Duty-Free Store">Duty-Free Store</option>
+<option value="E-tailer">E-tailer</option>
+<option value="Sporting Goods Chain">Sporting Goods Chain</option>
+<option value="Sporting Goods Store">Sporting Goods Store</option>
+<option value="Other (please detail other)">Other (please detail other)</option>
+</select><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="country_code">Country</label><select  id="country_code" name="country_code"><option value="">--None--</option><option value="AT">AT</option>
+<option value="DE">DE</option>
+<option value="IT">IT</option>
+<option value="CH">CH</option>
+<option value="US">US</option>
+</select><br>
+
+<label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+
+Brands of Interest:<select  id="00N1X00000NULWu" multiple="multiple" name="00N1X00000NULWu" title="Brands of Interest">
+<option value="SP">Adidas Sport</option>
 <option value="AS">Atelier Swarovski</option>
-<option value="BL">Berluti</option>
-<option value="BP">Barton Perreira</option>
-<option value="BS">BMW Motorsport</option>
-<option value="BW">BMW</option>
 <option value="BY">Bally</option>
+<option value="BP">Barton Perreira</option>
+<option value="BL">Berluti</option>
+<option value="BW">BMW</option>
+<option value="BS">BMW Motorsport</option>
 <option value="CD">Catherine Deneuve</option>
 <option value="CL">Celine</option>
 <option value="DC">Christian Dior</option>
 <option value="DL">Diesel</option>
 <option value="DM">Dior Uomo</option>
-<option value="GM">Guess By Marciano</option>
-<option value="GF">Guess Factory</option>
 <option value="DQ">DSquared2</option>
 <option value="EP">Emilio Pucci</option>
-<option value="GO">Guess Outlet</option>
-<option value="GA">Gant</option>
+<option value="EZ">Ermenegildo Zegna</option>
+<option value="FY">Fenty</option>
 <option value="FG">Fred</option>
+<option value="GA">Gant</option>
+<option value="GR">Gant Rugger</option>
+<option value="GD">GCDS</option>
+<option value="GU">Guess</option>
+<option value="GM">Guess By Marciano</option>
+<option value="GF">Guess Factory</option>
+<option value="GO">Guess Outlet</option>
+<option value="HD">Harley-Davidson</option>
+<option value="JC">Just Cavalli</option>
+<option value="KC">Kenneth Cole</option>
+<option value="KZ">Kenzo</option>
+<option value="LW">Loewe</option>
+<option value="LG">Longines</option>
+<option value="MO">Max&amp;Co</option>
+<option value="MM">MaxMara</option>
+<option value="ML">Moncler</option>
+<option value="MB">Montblanc</option>
 <option value="OM">Omega</option>
 <option value="PK">Pink</option>
-<option value="GR">Gant Rugger</option>
-<option value="KC">Kenneth Cole</option>
-<option value="MB">Montblanc</option>
-<option value="EZ">Ermenegildo Zegna</option>
-<option value="HD">Harley-Davidson</option>
-<option value="ML">Moncler</option>
-<option value="LG">Longines</option>
-<option value="MM">MaxMara</option>
-<option value="LW">Loewe</option>
-<option value="SE">Skechers</option>
-<option value="GU">Guess</option>
-<option value="TP">Tom Ford Private Collection</option>
-<option value="FY">Fenty</option>
 <option value="RW">Rimowa</option>
-<option value="GD">GCDS</option>
-<option value="WE">Web</option>
-<option value="JC">Just Cavalli</option>
-<option value="KZ">Kenzo</option>
-<option value="MO">Max&amp;Co</option>
 <option value="RC">Roberto Cavalli</option>
+<option value="SE">Skechers</option>
+<option value="SM">Sportmax</option>
 <option value="SC">Stella McCartney</option>
 <option value="SK">Swarovski</option>
-<option value="SM">Sportmax</option>
-<option value="SP">Adidas Sport</option>
+<option value="TB">Timberland</option>
 <option value="TO">Tod&#39;s</option>
+<option value="FT">Tom Ford</option>
+<option value="TP">Tom Ford Private Collection</option>
 <option value="VS">Victoria&#39;s Secret</option>
+<option value="WE">Web</option>
 <option value="ZC">Zegna Couture</option>
 </select><br>
-  
-  <label for="description">Description</label><textarea name="description"></textarea><br>
- 
-    
-  <input type=hidden name="lead_source" id="lead_source" value="Website">
 
-  
-  <input type="submit" name="submit">
-  
-  </form>
-  
+Description:<input  id="00N1X00000QHCBU" maxlength="255" name="00N1X00000QHCBU" size="20" type="text" /><br>
+
+<p style="font-size:13px"><b>Conditions and terms of use of the service</b></p>
+        
+        <input type="checkbox" id="tt" name="tt" value="tt">
+        <label for="tt" style="font-size:9px; display: inline-block"> By submitting the form, I declare that I have read the information on the processing of personal data.</label>
+        
+    <input type="submit" name="submit" class='subbutton'> 
+
+</form>
+
+   </div>
+      
+   
+ </div>
+      
+    </body>
+</html>
